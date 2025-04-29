@@ -1,0 +1,53 @@
+
+<section class="relative py-16 sm:py-20 md:py-24 overflow-hidden">
+  <!-- Círculo decorativo -->
+  <div class="absolute -bottom-24 -right-24 h-96 w-96 rounded-full  z-0"></div>
+
+  <!-- Contenido principal -->
+  <div class="container mx-auto relative z-10 px-6 sm:px-10 lg:px-16">
+    <div class="grid gap-10 md:gap-12 md:grid-cols-2 md:items-center">
+      
+      <!-- Texto -->
+      <div>
+        <div class="inline-block rounded-full bg-white/5 px-3 py-1 text-sm font-medium backdrop-blur-md border border-white/10" >
+          Nuestra Visión
+        </div>
+        <h2 class="mt-6 text-3xl sm:text-4xl font-bold tracking-tight bg-clip-text text-black" data-aos="fade-down" >
+          Innovación  Jurídica Pionera
+        </h2>
+        <p class="opacity-70 mt-4 text-base sm:text-lg text-black/90" data-aos="fade-down" >
+          Fundado en 2025, nuestro bufete se ha forjado una reputación de excelencia en servicios jurídicos de vanguardia. Combinamos una profunda experiencia jurídica con tecnología avanzada y un enfoque centrado en el cliente.
+        </p>
+        <p class="opacity-70 mt-4 text-base sm:text-lg text-black/70" data-aos="fade-down" >
+          Nuestros abogados aportan décadas de experiencia combinada en múltiples áreas de práctica con experiencia en tecnologías emergentes. Nos comprometemos a comprender su situación particular y a ofrecerle soluciones jurídicas personalizadas que le permitan alcanzar sus objetivos en un entorno digital en rápida evolución.
+        </p>
+        <div class="mt-8">
+          <button class="border-[3px] border-blue-500/50 bg-white/5 backdrop-blur-sm text-sm hover:bg-blue-500/50 hover:text-white transition-colors mt-6 text-black font-medium py-2 px-4 rounded" data-aos="fade-down">
+            Consulta Gratuita
+          </button>
+        </div>
+      </div>
+
+      <!-- Imagen -->
+      <div class="aspect-video overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-[0_0_30px_rgba(0,200,255,0.1)]" data-aos="fade-down">
+        <img src="./abogado1.jpg" alt="Abogado" class="h-full w-full object-cover" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<script>
+  // Importa y inicializa AOS
+  import AOS from 'aos';
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  });
+</script>

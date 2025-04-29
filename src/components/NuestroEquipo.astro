@@ -1,0 +1,73 @@
+---
+const teamMembers = [
+  {
+    name: "Sarah Johnson",
+    role: "Abogada Penalista",
+    image: "/abogado.webp?height=400&width=400",
+    bio: "Es una profesional con 15 años de experiencia especializada en defender a personas acusadas de delitos. Trabaja tanto con casos de delitos menores como con delitos graves.",
+  },
+  {
+    name: "Michael Chen",
+    role: "Abogado Corporativo",
+    image: "/abogado1.webp?height=400&width=400",
+    bio: "Especialista en derecho empresarial con enfoque en fusiones y adquisiciones. Asesora a compañías durante procesos de expansión y restructuración. Tiene un doctorado en Derecho Mercantil y habla tres idiomas, lo que le permite trabajar con empresas internacionales.",
+  },
+  {
+    name: "Roberto Mendoza",
+    role: "Abogado Derechos Humanos",
+    image: "/abogado2.webp?height=400&width=400",
+    bio: "Trabaja principalmente con ONGs y representa a víctimas de violaciones de derechos fundamentales. Ha llevado casos ante tribunales internacionales y ha participado en la redacción de legislación para proteger a grupos vulnerables. ",
+  },
+];
+---
+
+
+  <section class="relative py-16 md:py-24 overflow-hidden">
+    <div class="absolute -top-24 -left-24 h-96 w-96 rounded-full " />
+    <div class="container mx-auto relative">
+      <div class="mx-auto max-w-2xl text-center">
+        <div class="inline-block rounded-full bg-white/5 px-3 py-1 text-sm font-medium backdrop-blur-md border border-white/10">
+          Nuestros Expertos
+        </div>
+        <h2 class="mt-6 text-3xl font-bold tracking-tight sm:text-4xl bg-clip-text " data-aos="fade-left">
+          Conozca a Nuestro Equipo Visionario
+        </h2>
+        <p class="opacity-70 mt-4 text-lg " data-aos="fade-left">
+          Nuestros abogados con visión de futuro están dedicados a su éxito.
+        </p>
+      </div>
+      <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-left">
+        {teamMembers.map((member) => (
+          <div class="group flex flex-col items-center text-center">
+            <div class="mb-4 overflow-hidden rounded-full border-2 border-blue-500/50 p-1">
+              <div class="overflow-hidden rounded-full">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  class="h-48 w-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-bold ">{member.name}</h3>
+            <p class="text-sm text-black-400">{member.role}</p>
+            <p class="mt-4 opacity-70">{member.bio}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script>
+    // Importa y inicializa AOS
+    import AOS from 'aos';
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+      });
+    });
+  </script>

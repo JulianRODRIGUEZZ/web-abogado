@@ -1,0 +1,47 @@
+<section class="relative w-screen h-screen bg-black overflow-hidden">
+    <!-- Video de fondo -->
+    <div class="absolute inset-0 z-0">
+      <video class="w-full h-full object-cover" autoplay muted loop>
+        <source src="/Header-GP_2024-1.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      
+    </div>
+  
+    <!-- Contenido -->
+    <div class="relative z-10 h-full flex items-center">
+      <div class="container mx-auto px-6 sm:px-8 md:px-16 lg:px-24">
+        <header>
+          <h2 class="text-white text-3xl sm:text-4xl md:text-5xl font-medium" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            Soluciones Legales Efectivas
+          </h2>
+          <p class="opacity-70 text-white text-sm sm:text-base mt-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            Bufete Legal & Asociados le ofrece asesoría jurídica integral con un equipo
+          </p>
+          <p class="opacity-70 text-white text-sm sm:text-base" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            de abogados altamente calificados y comprometidos con la excelencia.
+          </p>
+  
+          <button class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm hover:bg-white hover:text-black transition-colors mt-6 text-white font-medium py-2 px-4 rounded" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            Consulta Gratuita
+          </button>
+        </header>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Asegúrate de incluir los estilos de AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<script>
+  // Importa y inicializa AOS
+  import AOS from 'aos';
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  });
+</script>

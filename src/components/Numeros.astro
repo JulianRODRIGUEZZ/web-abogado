@@ -1,0 +1,41 @@
+---
+import { CountUp } from "./CountUp";
+---
+
+<div style="">
+
+    <section style="" class="max-w-4xl mx-auto py-20 px-20  ">
+    <h2 class="
+     lg:text-4xl rounded-full bg-white/5 px-3 py-1 text-sm font-medium backdrop-blur-md border border-white/10 text-center text-balance mb-10 lg:mb-20">Nuestros Numeros</h2>
+    
+    <div class="grid cols-1 lg:grid-cols-3 gap-y-10">
+
+    <div class="flex flex-col justify-center items-center ">
+         <span class="number text-4xl font-bold tabular-nums tracking-tighter">
+            +<CountUp client:visible initial={0} final={10} /></span>
+        
+        <span class="uppercase opacity-70 text-center"> Años de experiencia</span>
+    </div>
+
+    <div class="flex flex-col justify-center items-center">
+            <span class="number text-4xl font-bold tabular-nums tracking-tighter">
+                +<CountUp client:visible initial={0} final={95} />%</span>
+            <span class="uppercase opacity-70 text-center">De Casos Ganados</span>
+    </div>
+
+    <div class="flex flex-col justify-center items-center">
+            <span class="number text-4xl font-bold tabular-nums tracking-tighter">
+                +<CountUp client:visible initial={0} final={1.5} decimals={1} />M</span>
+            <span class="uppercase opacity-70 text-center"> De clientes satisfechos</span>
+    </div>
+</div>
+</section>
+</div>
+
+<style>
+    .number {
+        text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+    }
+    
+</style>
