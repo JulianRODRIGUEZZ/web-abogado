@@ -1,0 +1,74 @@
+<section class="relative py-16 sm:py-20 md:py-24 overflow-hidden">
+  <!-- Círculo decorativo -->
+  <div class="absolute -bottom-24 -right-24 h-96 w-96 rounded-full  z-0"></div>
+
+  <!-- Contenido principal -->
+  <div class="container mx-auto relative z-10 px-6 sm:px-10 lg:px-16">
+    <div class="grid gap-10 md:gap-12 md:grid-cols-2 md:items-center">
+      
+      <!-- Texto -->
+      <div>
+        <div class="inline-block rounded-full bg-white/5 px-3 py-1 text-sm font-medium backdrop-blur-md border border-white/10" >
+          Tu Historia Nos Importa
+        </div>
+       
+        <p class="opacity-70 mt-4 text-base sm:text-lg text-black/90" data-aos="fade-down" >
+          En Osma Corporación Legal creemos firmemente que el acceso a
+            la justicia no debe ser un privilegio, sino un derecho real y efectivo.
+            Por eso, rompemos con la frialdad de la burocracia y acercamos el
+            derecho a las personas, con empatía, lenguaje claro y acciones
+            concretas.
+        </p>
+        <p class="opacity-70 mt-4 text-base sm:text-lg text-black/70" data-aos="fade-down" >
+          No prometemos milagros, pero sí entrega total, análisis
+            riguroso y una defensa construida con estrategia, experiencia y
+            corazón. Porque cada caso importa, y detrás de cada cliente hay una
+            vida que merece ser escuchada y protegida.
+        </p>
+        <div class="mt-8">
+          <a href="https://wa.me/573104500109" target="_blank" rel="noopener noreferrer">
+              <button class="border-[3px] border-blue-500/50 bg-white/5 backdrop-blur-sm text-sm hover:bg-blue-500/50 hover:text-white transition-colors mt-6 text-black font-medium py-2 px-4 rounded" data-aos="fade-down">
+            ¡Consulta Aqui!
+          </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video youtube -->
+      <div class="aspect-video overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-[0_0_30px_rgba(0,200,255,0.1)]" data-aos="fade-down">
+       <h3 class="uppercase text-black text-4xl tracking-wide text-center font-semibold mb-10 text-balance mx-auto">
+        
+        <lite-youtube 
+        class="shadow-2xl shadow-white/10 rounded-xl"
+        videoid="TzpbjFILd9A"
+        videotitle="Corporación Osma">
+        
+
+        </lite-youtube>
+ 
+
+    </h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<script>
+  // Importa y inicializa AOS
+  import AOS from 'aos';
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  });
+</script>
+
+<script>
+    import "@justinribeiro/lite-youtube"
+</script>
