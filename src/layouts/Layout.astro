@@ -20,18 +20,30 @@ const { currentLocale} = Astro
 <!doctype html>
 <html lang={ currentLocale }>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={ description } />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/logo2.png" />
-		<title>{title}</title>
-		<slot name="preload" />
-		
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+  <link rel="icon" type="image/svg+xml" href="/logo2.png" />
+  <slot name="preload" />
 
-	</head>
+  <!-- ✅ Open Graph (para Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://osmaabogado.com/" />
+  <meta property="og:image" content="https://osmaabogado.com/og-image.jpg" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content="https://osmaabogado.com/og-image.jpg" />
+</head>
+
 	<body>
 		<Header />
-		<AOSInit />
+		
 		<slot />
 		<BotonWhatsap />
 		
